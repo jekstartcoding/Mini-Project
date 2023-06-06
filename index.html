@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body-1">
+    <header>
+        <a href="https://revou.co/"><img src="assets/Logo RevoU.webp" alt="Revou logo class" class="logo"></a>
+        <div class="nav-bar">
+            <a href="index.html"><div class="nav-item" name="Home">Home</div></a>    
+            <a href="profile.html"><div class="nav-item" name="Our Profile">Our Profile</div></a>
+            <div class="nav-item" name="Portofolio">Portofolio</div>
+            <a href="#message-us-section"><div class="nav-item" name="Message Us">Message Us</div></a>
+        </div>
+        </header>
+    </div>
+    <hr>
+    <div class="body-2">
+    <div id="hero-section" class="hero">
+        <h1>Hi <span id="nama"></span>Jek, Welcome To The Website!</h1>
+        <p>ini adalah website latihan pertama</p>
+    </div>
+    <hr class="hr">
+    <div class="headquarters-section">
+        <h2 id="hq-section-text-1">Our Headquarters </h2>
+        <p id="hq-section-text-2">(tap an image to view in the Google Maps)</p>
+        <div class="wrapper">
+            <div class="headquarters-image-container">
+                <a href="https://goo.gl/maps/HrG6gXgobUJqvkea7" target="_blank">
+                <img src="assets/Microsoft-HQ-Germany.jpg" class="headquarters-image">
+                </a>
+                <p>Munich, Germany</p>
+            </div>
+            
+            <div class="headquarters-image-container">
+                <a href="https://goo.gl/maps/3HpGmjb4uwdapbmW8" target="_blank">
+                <img src="assets/Microsoft-HQ-USA.jpg" class="headquarters-image">
+                <p>Washington, United States of America (USA)</p>
+                </a>
+            </div>
+
+         <div class="headquarters-image-container">
+            <a href="https://goo.gl/maps/XWPmgJiDq3WFvm1t9" target="_blank">
+            <img src="assets/Microsoft-HQ-Jakarta.jpg" class="headquarters-image">
+            </a>
+              <p>Jakarta, Indonesia</p>
+         </div>
+
+        </div>
+    </div>
+    <hr class="hr">
+
+    <div id="message-us-section" class="message-us">
+        <h2>Message Us</h2>
+        <div class="form-validation">
+         <div class="form-wrapper">
+          <form class="message-form" name="message-form" onsubmit="return validateform()">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text" name="full-name" id="input-nama" placeholder="Nama" required> </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" name="email" placeholder="youraddress@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td>No. Telepon&nbsp;</td>
+                    <td>:&nbsp;&nbsp;</td>
+                    <td><input type="tel" name="phone" pattern="[0-9]{10,13}" placeholder="08987654321" required> </td>
+                </tr>
+                <tr>
+                    <td class="td-pesan">Pesan</td>
+                    <td class="td-pesan">:</td>
+                    <td><textarea class="pesan" id="input-pesan" placeholder="pesan" name="messages" required></textarea> </td>
+                </tr>
+            </table>
+            <input type="submit" value="kirim" id="kirim">
+          </form>
+     </div>
+     <div class="form-wrapper" id="form-output">
+        <table>
+            <tr>
+                <td><b>Current time</b>&nbsp;</td>
+                <td>:</td>
+                <td><p id="current-date"></p></td>
+            </tr>
+            <tr>
+                <td><b>Nama</b></td>
+                <td>:</td>
+                <td><span id="sender-full-name"></span> </td>
+            </tr>
+            <tr>
+                <td><b>Email</b></td>
+                <td>:</td>
+                <td><span id="sender-email"></span></td>
+            </tr>
+            <tr>
+                <td><b>No. Telepon&nbsp;</b></td>
+                <td>:&nbsp;&nbsp;</td>
+                <td><span id="sender-phone"></span></td>
+            </tr>
+            <tr>
+                <td class="td-pesan"><b>Pesan</b></td>
+                <td class="td-pesan">:</td>
+                <td><span id="sender-messages"></span></td>
+            </tr>
+        </table>
+     </div>
+    </div>
+    </div>
+</div>
+    <hr class="footer-hr">
+    <footer class="footer">Created by Muhammad Zaky Aliyashfi</footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

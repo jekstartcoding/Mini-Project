@@ -1,0 +1,230 @@
+html, body {
+    scroll-behavior:smooth;
+}
+
+body {
+background-color:#f0f4f4;
+}
+
+.body-1 {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.body-2 {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    border: 2px solid black;
+    border-radius:5px;
+    margin-right: 4em;
+    margin-top: 0.8em;
+    margin-bottom: 1.2em;
+}
+
+.nav-item {
+    padding:0.5em 2em;
+    width:90px;
+    border-right:2px solid black;
+    text-align: center;
+    cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item:hover {
+    background-color: lightgray;
+}
+
+.nav-bar:last-child {
+    border-right:none
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.logo {
+    height:4em;
+    margin-left: 4em;
+    filter:opacity(100%);
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.logo:hover {
+    filter: opacity(80%);
+}
+
+.hero {
+    height:578px;
+    width:1366px;
+    background-image:url(https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 4em;
+}
+
+.hr {
+    border-style: double;
+}
+
+.headquarters-section {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    margin-left: 4em;
+}
+
+#hq-section-text-1 {
+    margin: 0.3em;
+}
+
+#hq-section-text-2 {
+    margin: 0.3em;
+    color: gray;
+}
+
+.wrapper {
+    display: flex;
+    margin-top: 2em;
+}
+
+.headquarters-image-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em
+}
+
+.headquarters-image-container img {
+    filter:brightness(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.headquarters-image-container img:hover{
+    filter: brightness(50%);
+}
+
+.headquarters-image {
+    height:15em;
+    width: 15em;
+    border-radius: 50%;
+    border:1px solid black;
+    margin: 0em 2em;
+    cursor: pointer;
+}
+
+.message-us {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 4em;
+}
+
+.form-validation {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-wrapper {
+    margin-right: 20em;
+}
+
+#form-output {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding-left: 1em;
+    width: 100em;
+    margin-right: 10em;
+}
+
+td {
+    padding-top: 1em;
+}
+
+input[type="text"] {
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 1em;
+    padding-right: 14.2em;
+}
+
+input[type="email"] {
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    padding: 6px 14.2em;
+    padding-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    
+}
+
+input[type="tel"] {
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    padding: 6px 14.2em;
+    padding-left: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.td-pesan {
+    vertical-align: top;
+}
+
+#input-pesan {
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    padding-top: 6px;
+    padding-bottom: 6em;
+    padding-left: 1em;
+    width: 26.2em;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#kirim {
+    background-color: lightgray;
+    margin-top: 1em;
+    padding:0.5em;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    width:37.8em;
+    cursor:pointer;
+    transition: filter 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+#kirim :hover {
+    filter: brightness(30%);
+}
+
+.footer-hr {
+    margin-top: 3em;
+}
+
+.footer {
+    text-align: right;
+    margin-right: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-weight: bold;
+    font-size: large;
+}
